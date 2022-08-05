@@ -10,6 +10,9 @@ public class Mediatheque {
 	private List<Livre> livres = new ArrayList<>();
 	private List<CdAudio> disques = new ArrayList<>();
 	
+	private List<Emprunt> emprunts = new ArrayList<>();
+	
+	private List<Adherent> adherents = new ArrayList<>();
 	
 	
 	public List<Document> getDocuments() {
@@ -30,6 +33,7 @@ public class Mediatheque {
 	public void setDisques(List<CdAudio> disques) {
 		this.disques = disques;
 	}
+	
 	
 	
 }
