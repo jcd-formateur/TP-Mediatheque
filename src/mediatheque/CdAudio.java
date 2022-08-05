@@ -7,6 +7,12 @@ public class CdAudio extends Document {
 	private String compositeur;
 	private String interprete;
 	
+	public CdAudio(int identifiant, String titre, String compositeur, String interprete) {
+		super(identifiant, titre);
+		this.compositeur = compositeur;
+		this.interprete = interprete;
+	}
+	
 
 	public String getCompositeur() {
 		return compositeur;

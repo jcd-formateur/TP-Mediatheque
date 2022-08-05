@@ -4,6 +4,12 @@ public class Livre extends Document {
 	
 	private String auteur;
 
+
+	public Livre(int identifiant, String titre, String auteur ) {
+		super(identifiant, titre);
+		this.auteur = auteur;
+	}
+
 	public String getAuteur() {
 		return auteur;
 	}

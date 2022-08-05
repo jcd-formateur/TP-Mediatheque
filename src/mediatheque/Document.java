@@ -3,14 +3,20 @@ package mediatheque;
 public abstract class Document {
 	
 	
-	private String identifiant;
+	private int identifiant;
 	private String titre;
+
+	
+	public Document(int identifiant, String titre) {
+		this.identifiant = identifiant;
+		this.titre = titre;
+	}
 	
 	
-	public String getIdentifiant() {
+	public int getIdentifiant() {
 		return identifiant;
 	}
-	public void setIdentifiant(String identifiant) {
+	public void setIdentifiant(int identifiant) {
 		this.identifiant = identifiant;
 	}
 	public String getTitre() {

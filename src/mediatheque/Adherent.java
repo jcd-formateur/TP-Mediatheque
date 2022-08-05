@@ -6,7 +6,7 @@ import java.util.List;
 public class Adherent {
 
 	
-	private String identifiant;
+	private int identifiant;
 	private String prenom;
 	private String nom;
 	private String email;
@@ -18,17 +18,17 @@ public class Adherent {
 		
 	}
 	
-	public Adherent(String identifiant, String prenom, String nom, String email) {
+	public Adherent(int identifiant, String prenom, String nom, String email) {
 		this.identifiant = identifiant;
 		this.prenom = prenom;
 		this.nom = nom;
 		this.email = email;
 	}
 	
-	public String getIdentifiant() {
+	public int getIdentifiant() {
 		return identifiant;
 	}
-	public void setIdentifiant(String identifiant) {
+	public void setIdentifiant(int identifiant) {
 		this.identifiant = identifiant;
 	}
 	public String getPrenom() {
