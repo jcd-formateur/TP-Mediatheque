@@ -62,6 +62,20 @@ public class Adherent {
 	public void addEmprunt(Emprunt emprunt) {
 		emprunts.add(emprunt);
 	}
-	
-	
+
+	public void listerEmprunts(){
+		for(Emprunt emprunt : emprunts){
+			System.out.println(emprunt.getDateEmprunt()+" "+emprunt.getDocument());
+		}
+	}
+	@Override
+	public String toString() {
+		return "Adherent{" +
+				"identifiant=" + identifiant +
+				", prenom='" + prenom + '\'' +
+				", nom='" + nom + '\'' +
+				", email='" + email + '\'' +
+				", Nombre emprunts=" + emprunts.size() +
+				'}';
+	}
 }

@@ -34,5 +34,16 @@ public class CdAudio extends Document {
 	public int getNombreJourEmprunt() {
 		return 15;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "CdAudio{" +
+				"compositeur='" + compositeur + '\'' +
+				", interprete='" + interprete + '\'' +
+				"} " + super.toString();
+	}
+
+	public int getNombreJoursEmprunt(){
+		return 15;
+	}
 }

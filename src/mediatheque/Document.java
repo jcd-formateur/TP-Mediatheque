@@ -29,4 +29,13 @@ public abstract class Document {
 
 	public abstract int getNombreJourEmprunt();
 
+	@Override
+	public String toString() {
+		return "Document{" +
+				"identifiant=" + identifiant +
+				", titre='" + titre + '\'' +
+				'}';
+	}
+
+	public abstract int getNombreJoursEmprunt();
 }

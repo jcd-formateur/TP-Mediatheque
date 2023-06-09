@@ -9,11 +9,12 @@ public class Emprunt {
 	private Document document;
 	
 	public Emprunt() {
+		dateEmprunt = LocalDate.now();
 	}
 	public Emprunt(Adherent adherent, Document document) {
+		this();
 		this.adherent = adherent;
 		this.document = document;
-		dateEmprunt = LocalDate.now();
 	}
 
 	public LocalDate getDateEmprunt() {
@@ -34,8 +35,14 @@ public class Emprunt {
 	public void setDocument(Document document) {
 		this.document = document;
 	}
-	
-	
-	
 
+
+	@Override
+	public String toString() {
+		return "Emprunt{" +
+				"dateEmprunt=" + dateEmprunt +
+				", adherent=" + adherent +
+				", document=" + document +
+				'}';
+	}
 }
